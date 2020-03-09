@@ -94,6 +94,7 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_CFLAGS += -Wno-unused-parameter -Wno-unused-variable
 ifneq ($(TARGET_OVERLAYS_POWERHAL), true)
 LOCAL_VENDOR_MODULE := true
+LOCAL_VINTF_FRAGMENTS := android.hardware.power@1.0-service.xml
 else
 LOCAL_VENDOR_OVERLAY_MODULE := true
 endif
@@ -110,6 +111,7 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_CFLAGS += -Wno-unused-parameter -Wno-unused-variable
 ifneq ($(TARGET_OVERLAYS_POWERHAL), true)
 LOCAL_VENDOR_MODULE := true
+LOCAL_VINTF_FRAGMENTS := android.hardware.power@1.2-service.xml
 else
 LOCAL_VENDOR_OVERLAY_MODULE := true
 endif
